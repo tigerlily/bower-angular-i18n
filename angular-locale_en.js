@@ -52,6 +52,9 @@ $provide.value("$locale", {
       "Nov",
       "Dec"
     ],
+    "longDateTime": "MMMM d y 'at' HH:mm:ss a",
+    "mediumDateTime": "MMM d y 'at' HH:mm a",
+    "shortDateTime": "MMM d 'at' HH:mm a",
     "fullDate": "EEEE, MMMM d, y",
     "longDate": "MMMM d, y",
     "medium": "MMM d, y h:mm:ss a",
@@ -96,3 +99,4 @@ $provide.value("$locale", {
   "pluralCat": function (n) {  if (n == 1) {   return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
+
