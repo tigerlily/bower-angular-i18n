@@ -61,7 +61,7 @@ $provide.value("$locale", {
     "mediumDate": "d MMM y",
     "mediumTime": "HH:mm:ss",
     "short": "dd/MM/yy HH:mm",
-    "shortDate": "dd/MM/yy",
+    "shortDate": "d MMM",
     "shortTime": "HH:mm"
   },
   "NUMBER_FORMATS": {
@@ -99,4 +99,5 @@ $provide.value("$locale", {
   "pluralCat": function (n) {  if (n >= 0 && n <= 2 && n != 2) {   return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
+
 

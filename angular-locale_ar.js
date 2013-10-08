@@ -58,7 +58,7 @@ $provide.value("$locale", {
     "mediumDate": "dd\u200f/MM\u200f/yyyy",
     "mediumTime": "h:mm:ss a",
     "short": "d\u200f/M\u200f/yyyy h:mm a",
-    "shortDate": "d\u200f/M\u200f/yyyy",
+    "shortDate": "d\u200fMMM\u200f",
     "shortTime": "h:mm a"
   },
   "NUMBER_FORMATS": {
@@ -96,3 +96,4 @@ $provide.value("$locale", {
   "pluralCat": function (n) {  if (n == 0) {   return PLURAL_CATEGORY.ZERO;  }  if (n == 1) {   return PLURAL_CATEGORY.ONE;  }  if (n == 2) {   return PLURAL_CATEGORY.TWO;  }  if (n == (n | 0) && n % 100 >= 3 && n % 100 <= 10) {   return PLURAL_CATEGORY.FEW;  }  if (n == (n | 0) && n % 100 >= 11 && n % 100 <= 99) {   return PLURAL_CATEGORY.MANY;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
+
