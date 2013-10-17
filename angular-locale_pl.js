@@ -52,6 +52,9 @@ $provide.value("$locale", {
       "lis",
       "gru"
     ],
+    "longDateTime": "d MMMM y 'o' HH:mm:ss",
+    "mediumDateTime": "d MMM y 'o' HH:mm",
+    "shortDateTime": "d MMM 'o' HH:mm",
     "fullDate": "EEEE, d MMMM y",
     "longDate": "d MMMM y",
     "medium": "d MMM y HH:mm:ss",
@@ -96,3 +99,4 @@ $provide.value("$locale", {
   "pluralCat": function (n) {  if (n == 1) {   return PLURAL_CATEGORY.ONE;  }  if (n == (n | 0) && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) {   return PLURAL_CATEGORY.FEW;  }  if (n != 1 && (n % 10 == 0 || n % 10 == 1) || n == (n | 0) && n % 10 >= 5 && n % 10 <= 9 || n == (n | 0) && n % 100 >= 12 && n % 100 <= 14) {   return PLURAL_CATEGORY.MANY;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
+
